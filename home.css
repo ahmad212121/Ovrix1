@@ -50,7 +50,6 @@ a{
     text-decoration:none;
 }
 nav{
-    margin: 0px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -86,6 +85,7 @@ nav{
     width:18px;
 }   
 .logo-text strong{
+    padding:0px 160px 0px 0px; 
     font-size:15px;
     color:var(--accent);
     letter-spacing:2px;

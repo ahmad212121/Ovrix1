@@ -28,7 +28,9 @@
        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     }
     body{
-        background-color: var(--bg);
+        background-image: url(images/imgeback.png);
+        background-size: cover;
+        backdrop-filter: blur(5px);
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -41,7 +43,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: var(--border2);
+        background-color: #c8a94b65;
+        backdrop-filter: blur(50px);
         width: 90%;
         max-width: 540px;
         padding: 5px 4px;
@@ -144,32 +147,38 @@
       border-top-right-radius: 0px;
     }
 
-    .back{
-        height: 200px;
-        width: 200px;
-        position:relative;
-        z-index: 1;
-        border-radius: 50%;
-        background-color: #e8c87e6b;
-        top: -100px;
-        right: -250px;
+    .backpage{
+        background-color: var(--border2);
+        padding: 5px 20px;
+        border-radius: 20px;
+        margin-bottom: 5px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.5s;
+        animation: pop1 1s ease-in-out infinite;
     }
-    
-    .back1{
-        height: 200px;
-        width: 200px;
-        position:absolute;
-        z-index: 1;
-        border-radius: 50%;
-        background-color: #e8c87e6b;
-        top: 470px;
-        right: 470px;
+
+    .backpage:hover{
+        color: var(--accent2);
+        background-color: var(--text);
+    }
+
+    @keyframes pop1{
+        0%{
+        }
+        50%{
+            box-shadow: 0px 0px 10px #e8c97e;
+        }
+        100%{
+
+        }
     }
     </style>
 </head>
 <body>
     <div class="main">
-        <div class="back"></div>
+        <a href="index.html" class="backpage">⇜BACK</a>
         <div class="form">
             <p class="plite">قريباَ <span> 🟢</span></p>
             <br>
@@ -181,7 +190,6 @@
                 <input type="text" id="emailin" placeholder="enter your email...">
             </form>
         </div>
-        <div class="back1"></div>
         <br><br><br><br>
         <p class="cs-footer">© 2026 Orvix — جميع الحقوق محفوظة</p></div>
     </div>
