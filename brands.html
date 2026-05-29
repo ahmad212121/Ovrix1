@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brands</title>
     <style>
+        :root{
+  --bg:#0a0a0a;
+  --surface:#111;
+  --card:#181818;
+  --card2:#1e1e1e;
+  --accent:#e8c97e;
+  --accent2:#c8a84b;
+  --accent-dim:rgba(232,201,126,0.12);
+  --text:#f0ebe0;
+  --muted:#777;
+  --muted2:#555;
+  --border:#222;
+  --border2:#2e2e2e;
+}
+
+
     *{
        margin: 0;
        padding: 0;
@@ -12,7 +28,7 @@
        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     }
     body{
-        background-color: aliceblue;
+        background-color: var(--bg);
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -25,7 +41,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--border2);
         width: 90%;
         max-width: 540px;
         padding: 5px 4px;
@@ -38,7 +54,7 @@
     .plite{
         
         font-weight: bold;
-        background-color: rgba(220, 220, 220, 0.568);
+        background-color:var(--accent2);
         padding: 5px;
         margin: 0px 60px;
         border-radius: 50px;
@@ -78,12 +94,12 @@
     }
 
     h1 span{
-        color: #1D9E75;
+        color: var(--accent2);
     }
 
     .ppp{
         font-size: 15px;
-      color: #888;
+      color:var(--accent2);
       margin-bottom: 2.5rem;
       font-weight: 400;
     }
@@ -91,7 +107,7 @@
     .divhr{
         width: 40px;
       height: 1.5px;
-      background: rgba(0,0,0,0.15);
+      background: var(--bg);
       margin: 0 auto 2rem;
       border-radius: 2px;
     }
@@ -104,18 +120,18 @@
       border: 0.5px solid rgba(0,0,0,0.18);
       padding: 0 12px;
       font-size: 14px;
-      background: #f5f5f3;
+      background: var(--border);
       color: #111;
       outline: none;
       font-family: inherit;
     }
 
-    input:focus{border-color: #1D9E75;}
+    input:focus{border-color: var(--accent2);color:wheat;}
 
     .button{
         height: 38px;
       padding: 0 16px;
-      background: #1D9E75;
+      background: var(--accent2);
       color: #fff;
       border: none;
       border-radius: 8px;
@@ -134,11 +150,21 @@
         position:relative;
         z-index: 1;
         border-radius: 50%;
-        background-color: #1d9e7557;
+        background-color: #e8c87e6b;
         top: -100px;
         right: -250px;
     }
     
+    .back1{
+        height: 200px;
+        width: 200px;
+        position:absolute;
+        z-index: 1;
+        border-radius: 50%;
+        background-color: #e8c87e6b;
+        top: 470px;
+        right: 470px;
+    }
     </style>
 </head>
 <body>
@@ -152,11 +178,12 @@
             <form>
                 <div class="divhr"></div>
                 <input type="button" class="button" onclick="send()" value="أبلغني">
-                 <input type="text" id="emailin" placeholder="enter your email...">
+                <input type="text" id="emailin" placeholder="enter your email...">
             </form>
         </div>
+        <div class="back1"></div>
         <br><br><br><br>
-    <p class="cs-footer">© 2026 Orvix — جميع الحقوق محفوظة</p></div>
+        <p class="cs-footer">© 2026 Orvix — جميع الحقوق محفوظة</p></div>
     </div>
     <script src="op.js"></script>
 
