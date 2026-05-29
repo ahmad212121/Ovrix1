@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#161616);
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            
+        }
+        .brand img{
+            width: 100px;
+        }
+        .brand h3{
+            margin: 20px;
+            color: white;
+            font-size: 70px;
+        }
+        h2{
+            color: white;
+        }
+        select{
+           
+            width: 280px;
+            padding: 10px 12px;
+            background-color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            border-bottom: 2px solid #ffffff;
+            color: #c8a84b;
+       }
+       input{
+            width: 280px;
+            padding: 10px 12px;
+            background-color: #c8a84b;
+            font-size: 16px;
+            cursor: pointer;  
+            border-radius: 6px;
+            color: #ffffff;
+            font-weight: bold;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="brand"><img src="images/Logo.png" alt=""><h3 style="float: right;">ORVI<span style="color: #c8a84b;">X</span></h3></div>
+        <h2>Welcome to Orvi<span style="color: #c8a84b;">X</span></h2>
+        <select name="country" id="country">
+            <option value="Palestine">Palestine</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Lebanon">Lebanon</option>
+            <option value="Syria">Syria</option>
+        </select>
+        <br><br>
+        <input type="button" value="SHOP" onclick="trycountry()" >
+
+    </div>
+    <script src="op.js"></script>
+</body>
+</html>
