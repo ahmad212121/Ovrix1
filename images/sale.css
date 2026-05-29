@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+:root{
+  --bg:#0a0a0a;
+  --surface:#111;
+  --card:#181818;
+  --card2:#1e1e1e;
+  --accent:#e8c97e;
+  --accent2:#c8a84b;
+  --accent-dim:rgba(232,201,126,0.12);
+  --text:#f0ebe0;
+  --muted:#777;
+  --muted2:#555;
+  --border:#222;
+  --border2:#2e2e2e;
+}
+
+.main1{
+    position: relative;
+    z-index: 1;
+    height: 500px;
+    top: 50px;
+    width: 100%;
+    animation: down1 2s ease-in-out 1;
+
+}
+
+@keyframes down1{
+    from{
+     top: 0px;
+    }
+    to{
+     top: 50px;
+    }
+}
+
+.miniimge img{
+    width: 100px;
+    height: 100px;
+
+}
+.miniimge{
+    width: 110px;
+    height: 110px;
+    background-color: rgba(162, 154, 120, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 5px;
+    border-bottom: 3px solid var(--accent2);
+    
+    
+}
+.ofer{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    background: linear-gradient(var(--surface),var(--surface),#463f27);
+}
+.imgfull{
+  height:  455px;
+  margin-top: 10px;
+  position: relative;
+  right: 50px;
+}
+.imgfull img{
+   
+    height: 100%;
+
+}
+.description{
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    right: 20px;
+
+}
+.description .brand{
+    color: #a99e9e;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 33px;
+}
+.description .name{
+     font: 1em sans-serif;
+     color: #adaf97;
+     margin-bottom: 8px;
+     font-size: 20px;
+
+}
+.description .p{
+         font: 1em sans-serif;
+     color: #adaf97;
+     margin-bottom: 5px;
+     font-size: 13px;
+
+}
+
+.price{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.buttonbuy{
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    padding: 10px ;
+    border-radius: 20px;
+}
+
+.PrimaryButton{
+    padding: 10px 50px;
+}
+.SecondaryButton{
+    padding: 10px 50px;
+}
+
+
+@media (20px <= width <= 800px){
+    .main1{
+        top: 135px;
+        animation: down2 2s ease-in-out 1;
+    }
+
+    @keyframes down2 {
+        from{
+            top: 0px;
+        }
+        to{
+            top: 135px;
+        }
+    }
+}
