@@ -13,13 +13,38 @@
   --border2:#2e2e2e;
 }
 
-
 body,#root{
     background:var(--bg);
     color:var(--text);
     font-family:'DM Sans',sans-serif;
     font-size:13px;
 }
+.loginn{
+        width: 80px;
+        height: 30px;
+        border-radius: 12px;
+        position: relative;
+        background-color: var(--accent2);
+        color: #ffffff;
+        font-weight: bold;
+
+    }
+.loginn a{
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.loginn:hover{
+    background-color: white;
+}
+.loginn a:hover{
+    color: var(--accent2);
+}    
 a{
     color:inherit;
     text-decoration:none;
@@ -713,6 +738,14 @@ ul li a {
     opacity: 1;
     animation: hoverp-card 0.5s ease-in-out;
 }
+.p-card{
+    animation: p-card1;
+    animation-timeline: view(1% 1%);
+}
+
+.p-card:hover{
+    background-color: var(--border2);
+}
 
 @keyframes hoverp-card{
     to{
@@ -787,7 +820,8 @@ nav{
 
 /*تنسيق عرض الصفحة*/
 
-@media (20px <= width <= 800px){
+    @media (20px <= width <= 800px){
+
     nav{
         flex-direction: column;
         gap: 20px;
@@ -819,4 +853,42 @@ nav{
     .dash{
         display: none;
     }
+    .loginn{
+        width: 30px;
+        height: 30px;
+        background-color: var(--accent2);
+        color: #ffffff;
+        font-weight: bold;
+
+    }
+    .loginn a{
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .loginn{
+        width: 60px;
+        height: 30px;
+        border-radius: 12px;
+        position: relative;
+        background-color: var(--accent2);
+        color: #ffffff;
+        font-weight: bold;
+
+    }
+.loginn a{
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.loginn:hover{
+    background-color: white;
 }
+.loginn a:hover{
+    color: var(--accent2);
+}    
+    }
